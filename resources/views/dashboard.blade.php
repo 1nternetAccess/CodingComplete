@@ -11,9 +11,9 @@
     <header>
         <nav>
             <ul class="navbar">
-                <li><a>Home</a></li>
-                <li><a>Level Select</a></li>
-                <li><a>Progress</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Level Select</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Progress</a></li>
             </ul>
         </nav>
     </header>

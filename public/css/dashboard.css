@@ -10,8 +10,16 @@
     background-color: blue;
 }
 
-.navbar li {
+.nav-item {
     display: inline;
-    background-color: red;
     margin: 5px;
+}
+
+.nav-link {
+    border-radius: 5px;
+    border: none;
+}
+
+.nav-link:hover {
+    cursor: pointer;
 }
