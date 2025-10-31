@@ -23,6 +23,7 @@
 }
 
 .nav-link {
+    /* Set BG color locally for brightness filter */
     background-color: var(--navbar-bg-col);
 
     /* ALIGNMENT (NO TOUCHY) */
@@ -40,7 +41,6 @@
 .nav-link:hover {
     cursor: pointer;
     filter: brightness(var(--navbar-hover-brightness));
-    /* background-color: gray; */
 }
 
 .center-text {
