@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
+    {{-- Import all CSS files --}}
     <link rel="stylesheet" href={{asset("css/dashboard.css")}}>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Home</div></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Level Select</div></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Progress</div></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Home</div></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Level Select</div></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Progress</div></a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam debitis commodi delectus facilis nam? Commodi error enim, minus quas animi reprehenderit soluta tempora nemo, fuga nobis vitae. Repudiandae, recusandae nobis.
     </main>
 </body>
 </html>
