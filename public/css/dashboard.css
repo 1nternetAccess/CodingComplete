@@ -1,5 +1,5 @@
 :root {
-    --navbar-bg-col: gainsboro;
+    --navbar-bg-col: rgb(240, 240, 240);
     --navbar-hover-brightness: 70%;
 }
 
@@ -51,10 +51,19 @@
 }
 
 .main-content {
-    display: unset;
+    /* display: unset; */
     clear: both;
-    width: 100%;
+    width: auto;
     height: 100%;
     background-color: var(--navbar-bg-col);
-    filter: brightness(50%);
+    filter: brightness(90%);
+    padding: 5px;
+}
+
+.display-area {
+    margin: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
 }

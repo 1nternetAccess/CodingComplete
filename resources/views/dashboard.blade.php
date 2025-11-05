@@ -9,6 +9,7 @@
     <link rel="stylesheet" href={{asset("css/dashboard.css")}}>
 </head>
 <body>
+    <div class="titlebar">Dashboard</div>
     <nav>
         <ul class="navbar">
             <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Home</div></a></li>
@@ -17,7 +18,10 @@
         </ul>
     </nav>
     <main class="main-content">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam debitis commodi delectus facilis nam? Commodi error enim, minus quas animi reprehenderit soluta tempora nemo, fuga nobis vitae. Repudiandae, recusandae nobis.
+        <div class="display-area">
+            <h1>Progress</h1>
+            <p></p>
+        </div>
     </main>
 </body>
 </html>
