@@ -9,7 +9,7 @@
     <link rel="stylesheet" href={{asset("css/dashboard.css")}}>
 </head>
 <body>
-    <div class="titlebar">Dashboard</div>
+    <header><span>Dashboard</span></header>
     <nav>
         <ul class="navbar">
             <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Home</div></a></li>
