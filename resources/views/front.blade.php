@@ -22,7 +22,8 @@
       <p>
         Learning code step by step
       </p>
-      <a href="#" class="btn">Start Journey →</a>
+      <a href="{{ url('/login') }}" class="btn">Start Journey →</a>
+      
     </section>
 
     <section class="posts">
