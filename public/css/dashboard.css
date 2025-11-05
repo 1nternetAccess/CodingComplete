@@ -1,17 +1,81 @@
+:root {
+    --header-bg-col-1: rgb(40, 40, 80);
+    --header-bg-col-2: rgb(200, 200, 240)
+    --header-text-col: white;
+
+    --navbar-bg-col: rgb(181, 181, 239);
+    --navbar-hover-col: rgb(121, 121, 179);
+
+    --main-content-bg: rgb(241, 241, 241);
+    --main-content-fg: white;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
+header {
+    text-align: center;
+    align-content: center;
+    height: 100px;
+    font-size: 3rem;
+    background-image: linear-gradient(to left right, var(--header-bg-col-1), var(--header-bg-col-2));
+    color: var(--header-text-col)
+}
 
 .navbar {
     list-style: none;
-    padding: 10px;
-    background-color: blue;
+    clear: both;
+    display: flex;
+    align-content: left;
+    background-color: var(--navbar-bg-col);
 }
 
-.navbar li {
-    display: inline;
-    background-color: red;
-    margin: 5px;
+.nav-item {
+    height: 3rem;
+    width: 8rem;
+}
+
+.nav-link {
+    /* Set BG color locally for brightness filter */
+    background-color: var(--navbar-bg-col);
+
+    /* ALIGNMENT (NO TOUCHY) */
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+
+    /* FONT PROPERTIES */
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    filter: brightness(var(--navbar-hover-brightness));
+}
+
+.center-text {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.main-content {
+    /* display: unset; */
+    clear: both;
+    width: auto;
+    height: 100%;
+    background-color: var(--main-content-bg);
+    padding: 5px;
+}
+
+.display-area {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--main-content-fg);
 }
