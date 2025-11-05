@@ -55,7 +55,7 @@ header {
 
 .nav-link:hover {
     cursor: pointer;
-    filter: brightness(var(--navbar-hover-brightness));
+    background-color: var(--navbar-hover-col);
 }
 
 .center-text {
