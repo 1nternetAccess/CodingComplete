@@ -7,17 +7,16 @@
   <link rel="stylesheet" href={{asset("css/front.css")}} />
 </head>
 <body>
+    <nav>
+        <a href="{{ url('/login') }}">Login</a>
+      </nav>
+    
   <header>
     <h1>Welcome to Coding Complete!</h1>
     <p>Your journey to mastering code starts here.</p>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Login</a>
-   
-  </nav>
-
+  
   <main>
     <section class="intro">
       <p>
