@@ -32,6 +32,7 @@
                     </ul>
                 </nav>
                 <div class="editor" id="editor">
+                    <div></div>
                     <textarea class="editor-input"></textarea>
                 </div>
             </div>
