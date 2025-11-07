@@ -11,3 +11,5 @@ Route::get('/login', function() {return view('login');});
 Route::get('/levels', function() {return view('levelselect');});
 
 Route::get('/dashboard', function() {return view('dashboard');});
+
+Route::get('/editor', function() {return view('editor');});
