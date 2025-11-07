@@ -12,19 +12,29 @@
 
     <main>
         <div class="container-1">
+            
             <div class="container-2">
-                <div class="description">
-                    <h2>Title</h2>
-                    <p>Description</p>
+                <nav>
+                    <ul class=navbar>
+                        <li><button onclick="displayDescription()">Description</button></li>
+                        <li><button onclick="displayConsole()">Console</button></li>
+                    </ul>
+                </nav>
+                <div>
+                    <div class="console" id="console">console</div>
+                    <div class="description" id="description">
+                        <h2>Title</h2>
+                        <p>Description</p>
+                    </div>
                 </div>
             </div>
             <div class="container-2">
-                <div class="editor-area">
-                    <div class="editor">editor</div>
-                    <div class="console">console</div>
-                </div>
+                <div class="editor" id="editor">editor</div>
             </div>
         </div>
     </main>
 </body>
+
+<script src="{{asset("js/editor.js")}}"></script>
+
 </html>

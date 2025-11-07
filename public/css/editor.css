@@ -19,14 +19,12 @@ main {
 
 .container-1 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     height: 100%;
 }
 
-.description {
-    background-color: red;
-    width: 100%;
-    height: 100%;
+.container-2 {
+    position: relative;
 }
 
 .editor-area {
@@ -35,16 +33,49 @@ main {
     height: 100%;
 }
 
-.editor {
-    background-color: green;
+.navbar {
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.navbar li {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+}
+
+.navbar li button {
+    width: 100%;
     height: 100%;
+    font-size: 1.5em;
+    border-radius: 5px 5px 0px 0px;
+    border-style: none;
+}
+
+.navbar li button:hover {
+    cursor: pointer;
+}
+
+/* Different Editor Areas */
+
+.description {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .console {
     color: white;
     background-color: blue;
-    position: relative;
     width: 100%;
-    top: calc(var(--console-height) * -1);
-    height: var(--console-height);
+    height: 100%;
+    position: absolute;
+}
+
+.editor {
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
