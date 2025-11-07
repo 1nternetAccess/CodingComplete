@@ -22,17 +22,19 @@ h2 {
     color: #333;
 }
 
-input[type="email"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 6px;
+    box-sizing: border-box; /* makes width consistent */
 }
+
 
 button {
     width: 100%;
-    background: #4CAF50;
+    background: #82487f;
     color: white;
     padding: 10px;
     border: none;
@@ -41,5 +43,5 @@ button {
 }
 
 button:hover {
-    background: #45a049;
+    background: #82487f;
 }
