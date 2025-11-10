@@ -21,7 +21,7 @@
                     </ul>
                 </nav>
                 <div>
-                    <div class="console" id="console">console</div>
+                    <div class="console" id="console"><h1>console<h1></div>
                     <div class="description" id="description">
                         <h2>Title</h2>
                         <p>Description</p>
