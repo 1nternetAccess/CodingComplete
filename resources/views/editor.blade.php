@@ -18,8 +18,13 @@
                         <li><button onclick="displayConsole()">Console</button></li>
                     </ul>
                 </nav>
+<<<<<<< HEAD
+                <div>
+                    <div class="console" id="console"><h1>console<h1></div>
+=======
                 <div class="container-3">
                     <div class="console" id="console">console</div>
+>>>>>>> 9df00843ed3c28180a8883a2217da2d4862f3476
                     <div class="description" id="description">
                         <h1>Title</h1>
                         <p>Description</p>
@@ -32,6 +37,7 @@
                     </ul>
                 </nav>
                 <div class="editor" id="editor">
+                    <div></div>
                     <textarea class="editor-input"></textarea>
                 </div>
             </div>
