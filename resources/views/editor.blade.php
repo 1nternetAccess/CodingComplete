@@ -34,11 +34,8 @@
                     </ul>
                 </nav>
                 <div class="editor" id="editor">
-                    <textarea class="editor-input"></textarea>
-=======
                     <p id="editor-linecount"></p>
                     <div contenteditable="true" style="overflow: auto; max-height:  200px;" class="editor-input" id="editor-input">Test</div>
->>>>>>> Stashed changes
                 </div>
             </div>
         </div>
