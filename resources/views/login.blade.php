@@ -20,7 +20,7 @@
         </div>
         <section>
             <button type="submit">Login</button>
-            <a href="register.blade.php">Register</a>
+            <a href="{{ route('register') }}">Register</a>
         </section>
     </form>
 </main>
