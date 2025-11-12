@@ -18,8 +18,6 @@
                         <li><button onclick="displayConsole()">Console</button></li>
                     </ul>
                 </nav>
-                <div>
-                    <div class="console" id="console"><h1>console<h1></div>
                 <div class="container-3">
                     <div class="console" id="console">console</div>
                     <div class="description" id="description">
@@ -36,13 +34,6 @@
                 <div class="editor" id="editor">
                     <p id="editor-linecount"></p>
                     <div contenteditable="true" style="overflow: auto; max-height:  200px;" class="editor-input" id="editor-input">Test</div>
-                <div contenteditable="true" class="editor" id="editor">
-                    <div id="editor-linecount">1</div>
-                    <div contenteditable="false" class="editor-input" id="editor-input"></div>
-                    {{-- <div contenteditable="true" style="overflow: auto; max-height: 200px; display: grid; grid-template-rows: 50px 50px;" class="editor-input" id="editor-input">
-                        <div contenteditable="false" style="background-color:aqua">test1</div>
-                        <div style="background-color:blueviolet">test2</div>
-                    </div> --}}
                 </div>
             </div>
         </div>
