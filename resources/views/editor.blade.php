@@ -36,8 +36,6 @@
                 <div class="editor" id="editor">
                     <p id="editor-linecount"></p>
                     <div contenteditable="true" style="overflow: auto; max-height:  200px;" class="editor-input" id="editor-input">Test</div>
-                    <p id="editor-linecount"></p>
-                    <div contenteditable="true" style="overflow: auto; max-height:  200px;" class="editor-input" id="editor-input">Test</div>
                 </div>
             </div>
         </div>
