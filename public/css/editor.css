@@ -134,12 +134,11 @@ main {
     border-style: none;
     border-radius: 0;
     resize: none;
-    font-size: 20px;
 }
 
 .editor-input:focus {
     outline-style: none;
 }
-.editor-linecount{
+.editor-linecount {
     padding-right: 10px;
 }

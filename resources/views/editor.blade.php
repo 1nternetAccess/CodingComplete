@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100vh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,16 @@
     <title>Editor</title>
   <link rel="stylesheet" href={{asset("css/editor.css")}} />
 </head>
-<body>
-    <main>
-        <div class="container-1">
+<body style="height: 100vh;">
+    <main style="height: 100%;">
+        <div class="container-1" style="height: 100%;">
             
             <div class="container-2">
                 <nav>
                     <ul class=navbar>
-                        <li><button onclick="displayDescription()">Description</button></li>
-                        <li><button onclick="displayConsole()">Console</button></li>
+                        <li><button onclick="__displayDescription()">Description</button></li>
+                        <li><button onclick="__displayConsole()">Console</button></li>
+                        <li><button onclick="__executeUserCode()">Execute</button></li>
                     </ul>
                 </nav>
                 <div class="container-3">
@@ -31,9 +32,9 @@
                     <ul class=navbar>
                     </ul>
                 </nav>
-                <div class="editor" id="editor">
-                    <p id="editor-linecount">test</p>
-                    <div contenteditable="true" style="overflow: auto; max-height:  200px;" class="editor-input" id="editor-input">Test</div>
+                <div class="editor" id="editor" style="overflow-x: auto; overflow-y: auto; max-width:100%; max-height: 100%;">
+                    <p class="editor-linecount" id="editor-linecount">1</p>
+                    <div spellcheck="false" contenteditable="true"  class="editor-input" id="editor-input">print("Hello World!");</div>
                 </div>
             </div>
         </div>
