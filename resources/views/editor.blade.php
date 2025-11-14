@@ -19,7 +19,7 @@
                     </ul>
                 </nav>
                 <div class="container-3">
-                    <div class="console" id="console">console</div>
+                    <div class="console" id="console">[console]</div>
                     <div class="description" id="description">
                         <h1>Title</h1>
                         <p>Description</p>

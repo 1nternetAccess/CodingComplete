@@ -14,7 +14,7 @@ body {
 main {
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(53, 51, 51);
 }
 
 .container-1 {
@@ -40,50 +40,93 @@ main {
 }
 
 .navbar {
-    display: inline-block;
-    margin-left: 3px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 3px 20px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navbar li {
-    display: inline-block;
-    width: 150px;
-    height: 30px;
+    list-style: none;
 }
 
 .navbar li button {
-    width: 100%;
-    height: 100%;
-    font-size: 1.5em;
-    border-radius: 5px 5px 0px 0px;
-    border-style: none;
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
 }
 
 .navbar li button:hover {
     cursor: pointer;
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.navbar li button.active {
+    background-color: #1abc9c;
 }
 
 /* Different Editor Areas */
 
 .description {
-    background-color: red;
-    width: 100%;
-    height: 100%;
+    background-color: #2980b9;
+    width: 89%;
+    max-width: 1000px;
+    height: 84%;
+    padding: 50px 40px;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    border-radius: 2% 2% 2% 2%; 
 }
 
 .console {
-    color: white;
-    background-color: blue;
-    width: 100%;
-    height: 100%;
+    background-color: #1e1e1e; 
+    color: #d4d4d4; 
+    font-family: 'Fira Code', 'Courier New', monospace; 
+    font-size: 1.1rem;
+    width: 95%;
+    max-width: 800px; 
+    height: 91%; 
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3); 
+    overflow-y: auto;
+    line-height: 1.5; 
+
 }
 
 .editor {
-    background-color: green;
+    background-color: white;
     position: relative;
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: min-content 1fr;
+    font-size: 20px;
+    border-radius: 2% 2% 2% 2%;
+    font-size: 1.1rem;
+    padding: 20px; 
 }
 
 /* Editor Text Area */
@@ -96,4 +139,7 @@ main {
 
 .editor-input:focus {
     outline-style: none;
+}
+.editor-linecount{
+    padding-right: 10px;
 }
