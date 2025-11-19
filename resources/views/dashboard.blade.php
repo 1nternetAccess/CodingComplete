@@ -13,27 +13,17 @@
     <nav>
         <ul class="navbar">
             <li class="nav-item"><a class="nav-link" href="{{ url('/') }}"><div class="center-text">Home</div></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Level Select</div></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><div class="center-text">Progress</div></a></li>
         </ul>
     </nav>
     <main class="main-content">
-
-        <div class="progress">
-            <h2>Progress</h2>
-          
-            <div class="content-box">
-              <div class="intro">Content1</div>
-              <div class="posts">Content2</div>
-            </div>
-          </div>
-
           <div class="selection">
             <h2>Selection</h2>
           
             <div class="content-box2">
-              <div class="intro2">Content1</div>
-              <div class="posts2">Content2</div>
+              <button><div class="intro2">Level1</div></button>
+              <button><div class="posts2">Level2</div></button>
+              <button><div class="intro3">Level3</div></button>
+              <button> <div class="posts3">Level4</div></button>
             </div>
           </div>
     </main>

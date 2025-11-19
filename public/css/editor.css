@@ -96,6 +96,7 @@ main {
     transform: translate(-50%, -50%);
     overflow-y: auto;
     border-radius: 2% 2% 2% 2%; 
+
 }
 
 .console {
