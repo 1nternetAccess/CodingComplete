@@ -20,7 +20,7 @@
                     </ul>
                 </nav>
                 <div class="container-3">
-                    <div class="console" id="console">[console]</div>
+                    <div class="console" id="console"></div>
                     <div class="description" id="description">
                         <h1>Title</h1>
                         <p>Description</p>
@@ -39,8 +39,22 @@
             </div>
         </div>
     </main>
+
+<script>
+    //var __unit_tests = @json($person);
+    //console.log(__unit_tests.name);
+    var __level_data = {};
+    var __tests = [
+        {"params": [[1,2,3]], "expected_result": 6},
+        {"params": [[4,5,6]], "expected_result": 15}
+    ];
+    __level_data.tests = __tests;
+    __level_data.args = ["nums"];
+    
+</script>
+<script src="{{asset("js/editor.js")}}"></script>
+
 </body>
 
-<script src="{{asset("js/editor.js")}}"></script>
 
 </html>

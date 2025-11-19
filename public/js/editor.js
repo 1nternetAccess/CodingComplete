@@ -50,27 +50,14 @@ function __executeUserCode() {
     var user_function = null;
     var user_function_output = null;
     try {
-        new_function = Function("self", "window", "'use strict';" + __elem_editor_input.innerText);
+        new_function = Function(...__level_data.args, "'use strict';" + __elem_editor_input.innerText);
     }
     catch (error) {
         __printToUserConsole(error);
         return;
     }
 
-    try {
-        user_function_output = new_function();
-    }
-    catch (error) {
-        __printToUserConsole(error);
-        return;
-    }
-
-    if (user_function_output == 3){
-        __printToUserConsoleStyled("Success!", "black", "green");
-    }
-    else {
-        __printToUserConsoleStyled("Failure...", "black", "red");
-    }
+    __runUnitTests(new_function);
 }
 
 function print(text) {
@@ -85,6 +72,30 @@ function __printToUserConsole(text) {
 // Print something to the console using css styling
 function __printToUserConsoleStyled(text, text_color, background_color) {
     __elem_console.innerHTML += `<span style="color:${text_color}; background-color:${background_color}">${text}</span><br/>`
+}
+
+// Run the unit tests for the user's function
+function __runUnitTests(func) {
+    tests = __level_data.tests;
+    for (let i = 0; i < tests.length; i++){
+        test = tests[i];
+        result = null;
+
+        try {
+            result = func(...test.params)
+        }
+        catch (error) {
+            __printToUserConsole(error);
+            return;
+        }
+
+        if (result === test.expected_result){
+            __printToUserConsoleStyled(`Test ${i+1} of ${tests.length} successful!`, "black", "green");
+        } else {
+            __printToUserConsoleStyled(`Test ${i+1} of ${tests.length} failed...`, "black", "red");
+            __printToUserConsoleStyled(`Expected ${test.expected_result} but got ${result}`, "red", "black");
+        }
+    }
 }
 
 //printToUserConsole("Printing to the console with default styling!");

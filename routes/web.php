@@ -17,4 +17,16 @@ Route::get('/levels', function() {return view('levelselect');});
 
 Route::get('/dashboard', function() {return view('dashboard');});
 
-Route::get('/editor', function() {return view('editor');});
+Route::get('/editor', function() {
+    $person = new stdClass();
+
+    // Dynamically add properties
+    $person->name = "Alice";
+    $person->age = 30;
+    $person->city = "New York";
+
+
+    
+    return view('editor', ['person' => $person]);
+    }
+);
