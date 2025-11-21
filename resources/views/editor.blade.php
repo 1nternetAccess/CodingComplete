@@ -34,7 +34,8 @@
                 </nav>
                 <div class="editor" id="editor" style="overflow-x: auto; overflow-y: auto; max-width:100%; max-height: 100%;">
                     <p class="editor-linecount" id="editor-linecount">1</p>
-                    <div spellcheck="false" contenteditable="true"  class="editor-input" id="editor-input">print("Hello World!");</div>
+                    <div spellcheck="false" contenteditable="true"  class="editor-input" id="editor-input">function sum(nums){}
+                    </div>
                 </div>
             </div>
         </div>

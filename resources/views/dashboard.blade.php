@@ -20,11 +20,11 @@
             <h2>Selection</h2>
           
             <div class="content-box2">
-              <button><div class="intro2">Level1</div></button>
-              <button><div class="posts2">Level2</div></button>
-              <button><div class="intro3">Level3</div></button>
-              <button> <div class="posts3">Level4</div></button>
-            </div>
+              <button class="level-btn">Level 1</button>
+              <button class="level-btn">Level 2</button>
+              <button class="level-btn">Level 3</button>
+              <button class="level-btn">Level 4</button>
+          </div>
           </div>
     </main>
 </body>
