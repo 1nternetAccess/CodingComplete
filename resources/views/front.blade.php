@@ -9,7 +9,7 @@
 <body>
     <nav>
         <a href="{{ url('/login') }}">Login</a>
-      </nav>
+    </nav>
     
   <header>
     <h1>Welcome to Coding Complete!</h1>

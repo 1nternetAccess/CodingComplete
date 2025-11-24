@@ -1,12 +1,12 @@
 :root {
-  --header-bg-col-1: rgb(40, 40, 80);
-  --header-bg-col-2: rgb(200, 200, 240);
+  --header-bg-col-1: rgb(35, 50, 103);    
+  --header-bg-col-2: rgb(80, 110, 190);   
   --header-text-col: white;
 
-  --navbar-bg-col: rgb(181, 181, 239);
-  --navbar-hover-col: rgb(121, 121, 179);
+  --navbar-bg-col: rgb(85, 106, 169);     
+  --navbar-hover-col: rgb(70, 100, 170);  
 
-  --main-content-bg: rgb(241, 241, 241);
+  --main-content-bg: rgb(225, 230, 245); 
   --card-bg: white;
 }
 
@@ -57,7 +57,7 @@ header {
   padding: 0 20px;
   text-decoration: none;
 
-  transition: background 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .nav-link:hover {
@@ -106,7 +106,7 @@ header {
 .level-btn {
   flex: 1;
   padding: 50px 20px;
-  background: white;
+  background: rgb(112, 155, 211);
   border: none;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
