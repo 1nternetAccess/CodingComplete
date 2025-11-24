@@ -130,6 +130,7 @@ main {
     padding: 20px;
     height: 97%;
     width: 50%;
+    font-family: monospace;
 }
 
 /* Editor Text Area */

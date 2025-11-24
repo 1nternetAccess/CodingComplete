@@ -20,10 +20,10 @@
             <h2>Selection</h2>
           
             <div class="content-box2">
-              <button class="level-btn">Level 1</button>
-              <button class="level-btn">Level 2</button>
-              <button class="level-btn">Level 3</button>
-              <button class="level-btn">Level 4</button>
+              <button class="level-btn">Sum</button>
+              <button class="level-btn">Palindrome</button>
+              <button class="level-btn">Vowel Counter</button>
+              <button class="level-btn">List Zipper</button>
           </div>
           </div>
     </main>

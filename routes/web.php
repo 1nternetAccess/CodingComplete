@@ -33,10 +33,17 @@ Route::get('/editor/{challenge}', function($challenge) {
 });
 */
 
+Route::get('/editor', function() {return view('editor', ['challenge' => 'freeplay']);});
+
 Route::get('/editor/{challenge}', function($challenge) {
     //return 'Challenge is ' . $challenge;
     //$challenge = $request->input('challenge');
-    return view('editor', ['challenge' => $challenge]);
+    $challenges = array('sum', 'palindrome', 'vowelcount', 'listzip');
+    if (in_array($challenge, $challenges)){
+        return view('editor', ['challenge' => $challenge]);
+    } else {
+        return view('editor', ['challenge' => 'freeplay']);
+    }
 });
 
 //Route::get('editor/{challenge}', [ChallengeController::class, 'show'])->name('challenge.show');

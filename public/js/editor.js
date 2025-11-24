@@ -36,13 +36,22 @@ function __updateLineNumbers() {
     console.log("Empty: " + empty_line_count);
     console.log("Combined: " + combined_line_count);
 
-    var str_lines = "";
+    var str_lines = " \n";
     for (var i = 1; i <= combined_line_count; i++) {
         str_lines += `${i}\n`;
     }
     __elem_editor_linecount.innerText = str_lines;
 }
 
+function __updateFunctionInfo(){
+    var header = document.getElementById("funcHeader");
+    var title = document.getElementById("challenge-title");
+    var description = document.getElementById("challenge-description");
+
+    header.innerText = `function ${__level_data.funcName}(${__level_data.args})`;
+    title.innerText = __level_data.title;
+    description.innerText = __level_data.description;
+}
 
 function __executeUserCode() {
     __displayConsole();
@@ -76,7 +85,12 @@ function __printToUserConsoleStyled(text, text_color, background_color) {
 
 // Run the unit tests for the user's function
 function __runUnitTests(func) {
-    tests = __level_data.tests;
+    var tests = __level_data.tests;
+    var successes = 0;
+
+    if (tests.length === 0)
+        return;
+
     for (let i = 0; i < tests.length; i++){
         test = tests[i];
         result = null;
@@ -91,12 +105,19 @@ function __runUnitTests(func) {
 
         if (result === test.expected_result){
             __printToUserConsoleStyled(`Test ${i+1} of ${tests.length} successful!`, "black", "green");
+            successes++;
         } else {
             __printToUserConsoleStyled(`Test ${i+1} of ${tests.length} failed...`, "black", "red");
             __printToUserConsoleStyled(`Expected ${test.expected_result} but got ${result}`, "red", "black");
         }
     }
+
+    if (successes === tests.length){
+        __printToUserConsoleStyled(`Challenge Completed!  All tests passed`, "black", "gold");
+    }
 }
 
 //printToUserConsole("Printing to the console with default styling!");
 //printToUserConsoleStyled("Printing to the console with style!", "red", "black");
+__updateLineNumbers();
+__updateFunctionInfo();
