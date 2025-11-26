@@ -20,10 +20,10 @@
             <h2>Selection</h2>
           
             <div class="content-box2">
-              <button class="level-btn">Sum</button>
-              <button class="level-btn">Palindrome</button>
-              <button class="level-btn">Vowel Counter</button>
-              <button class="level-btn">List Zipper</button>
+              <button class="level-btn" onclick="window.location.href = '/../editor/sum'">Sum</button>
+              <button class="level-btn" onclick="window.location.href = '/../editor/palindrome'">Palindrome</button>
+              <button class="level-btn" onclick="window.location.href = '/../editor/vowelcount'">Vowel Counter</button>
+              <button class="level-btn" onclick="window.location.href = '/../editor/listzip'">List Zipper</button>
           </div>
           </div>
     </main>

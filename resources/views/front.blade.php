@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav>
-        <a href="{{ url('/login') }}">Login</a>
+        <a href="{{ url('/dashboard') }}">Dashboard</a>
     </nav>
     
   <header>
@@ -22,7 +22,7 @@
       <p>
         Learning code step by step
       </p>
-      <a href="{{ url('/login') }}" class="btn">Start Journey →</a>
+      <a href="{{ url('/dashboard') }}" class="btn">Start Journey →</a>
       
     </section>
 
